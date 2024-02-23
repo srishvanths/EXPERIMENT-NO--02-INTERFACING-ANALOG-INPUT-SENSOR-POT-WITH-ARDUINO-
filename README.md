@@ -1,13 +1,15 @@
- ###  DATE: 
+# INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO
 
-###  NAME: 
-###  ROLL NO :
-###  DEPARTMENT: 
+###  DATE: 23/02/2024
 
-**AIM**:  To interface a Analog  input (angular displacement sensor POT) and scale the values up on change in the input.
+###  NAME: RISHVANTH S
+###  ROLL NO : 212221080067
+###  DEPARTMENT: MECH
+
+## AIM:  To interface a Analog  input (angular displacement sensor POT) and scale the values up on change in the input.
 
 
-**COMPONENTS REQUIRED:**
+## COMPONENTS REQUIRED:
 1.	10 KΩPOT
 2.	1 KΩ resistor 
 3.	Arduino Uno 
@@ -17,7 +19,7 @@
 **
 
 
-**THEORY**: 
+## THEORY: 
 
 **Analog signals:**
 
@@ -53,7 +55,7 @@ CIRCUIT DIAGRAM
 **FIGURE -01
 **
 
-**PROCEDURE:**
+### PROCEDURE:
 
 1.	Connect the circuit as per the circuit diagram 
 2.	Connect the board to your computer via the USB cable.
@@ -67,28 +69,53 @@ CIRCUIT DIAGRAM
 
 
 
-**PROGRAM** 
- 
+### PROGRAM
+```
+
+ int pot;
+int led=7;
+void setup()
+{
+  pinMode(led, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  pot=analogRead(A0);
+ // Serial.print("Value=");
+  Serial.println(pot);
+  if(pot>900)
+  {  
+  // turn the LED on (HIGH is the voltage level)
+  digitalWrite(led, HIGH);
+  delay(500); // Wait for 1000 millisecond(s)
+  // turn the LED off by making the voltage LOW
+  digitalWrite(led, LOW);
+  delay(500);
+  }// Wait for 1000 millisecond(s)
+}
+```
 
 
 
 
+### Simulation output:
 
+## ON CONDITION:
 
+![Screenshot (28)](https://github.com/vasanthkumarch/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/161055755/8392a0cd-14cd-4d2d-9560-5496bbb89e85)
 
+## OFF CONDITION:
 
+![Screenshot (29)](https://github.com/vasanthkumarch/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/161055755/ce1d59d0-4c02-4376-be93-24f09664e104)
 
-**
-**Simulation output:** 
-**
+## PROGRAM WITH GRAPH:
 
+![Screenshot (27)](https://github.com/vasanthkumarch/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/161055755/91428612-afcf-4d5c-b8a6-76660fd316a7)
 
-[My image](username.github.com/repository/img/image.jpg)
+## SCHEMATIC DIAGRAM:
 
+![Screenshot (26)](https://github.com/vasanthkumarch/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/161055755/afeea8f4-5f51-4292-9279-e24f63616ffb)
 
-
-
-
-
-
-**RESULT: ** Arduino uno analog input functioning is learned and interfaced with digital input switch .
+### RESULT: Arduino uno analog input functioning is learned and interfaced with digital input switch .
