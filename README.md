@@ -1,8 +1,7 @@
- ###  DATE: 
-
-###  NAME: 
-###  ROLL NO :
-###  DEPARTMENT: 
+ ###  DATE: 23/02/2024
+###  NAME: RISHVANTH S
+###  ROLL NO : 212221080067
+###  DEPARTMENT: MECHANICAL
 
 **AIM**:  To interface a Analog  input (angular displacement sensor POT) and scale the values up on change in the input.
 
@@ -69,9 +68,11 @@ CIRCUIT DIAGRAM
 
 **PROGRAM** 
  
+![Screenshot 2024-04-26 210901](https://github.com/srishvanths/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/161055755/1a2fc1c2-c674-4a7c-ab7d-e03b45c16169)
 
 
 
+![Screenshot 2024-04-26 210918](https://github.com/srishvanths/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/161055755/c3940d15-c82f-4945-b0dc-f617d1410f05)
 
 
 
@@ -82,8 +83,10 @@ CIRCUIT DIAGRAM
 **Simulation output:** 
 **
 
+![Screenshot 2024-04-26 210937](https://github.com/srishvanths/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/161055755/c02d6694-696d-42dc-8e37-212ce711575f)
 
-[My image](username.github.com/repository/img/image.jpg)
+![Screenshot 2024-04-26 210102](https://github.com/srishvanths/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/161055755/76fb17e5-6944-4d9e-9de4-0a645d296964)
+
 
 
 
